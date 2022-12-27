@@ -1,10 +1,11 @@
 ﻿// Написать программу, которая из имеющегося массива строк формирует
 // массив из строк, длина которых меньше либо равна 3 символам. 
 
-
-
-string[] wordsLetters = new string[5]{"world", "55", "318", "home", "book"};
+string[] wordsLetters = new string[7]{"world", "55", "318", "home", "book", "old","4589"};
 string[] newArray = new string[wordsLetters.Length];
+
+findingValue(wordsLetters, newArray);
+printArray(newArray);
 
 void findingValue(string[] wordLetters, string[] newArray)
 {
@@ -19,4 +20,12 @@ void findingValue(string[] wordLetters, string[] newArray)
     }
 }
 
+void printArray(string[] arr)
+{
+    for(int i = 0; i < arr.Length; i++)
+    {
+        Console.Write($"{arr[i]} ");
+    }
+    Console.WriteLine();
+}
 
