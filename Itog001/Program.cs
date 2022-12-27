@@ -3,9 +3,10 @@
 
 string[] wordsLetters = new string[7]{"world", "55", "318", "home", "book", "old","4589"};
 string[] newArray = new string[wordsLetters.Length];
-
+System.Console.WriteLine();
 findingValue(wordsLetters, newArray);
 printArray(newArray);
+System.Console.WriteLine();
 
 void findingValue(string[] wordLetters, string[] newArray)
 {
